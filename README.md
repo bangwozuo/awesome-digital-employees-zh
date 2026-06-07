@@ -3,8 +3,8 @@
 > 一句话说明：这是数字员工（Digital Employee）开源生态的总入口与导航中心，精选全球最优秀的数字员工资产包、业务技能、场景工作流与连接器，帮助个人创业者、一人公司与中小企业零成本构建 AI 生产力团队。
 
 [![License: CC-BY-4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Digital Employee](https://img.shields.io/badge/Digital%20Employee-Package-blue)](https://github.com/hermes-agent/digital-employee-spec)
-[![Platform](https://img.shields.io/badge/Platform-数字员工平台-green)](https://github.com/hermes-agent)
+[![Digital Employee](https://img.shields.io/badge/Digital%20Employee-Package-blue)](https://github.com/bangwozuo/digital-employee-spec)
+[![Platform](https://img.shields.io/badge/Platform-数字员工平台-green)](https://github.com/bangwozuo)
 
 ---
 
@@ -26,17 +26,17 @@
 
 ```bash
 # 克隆一个示例资产包
-git clone https://github.com/hermes-agent/digital-employee-examples.git
+git clone https://github.com/bangwozuo/digital-employee-examples.git
 cd digital-employee-examples/ecommerce-customer-service-employee
 ```
 
 ### 2. 阅读规范
 
-所有资产遵循统一的 [digital-employee-spec](https://github.com/hermes-agent/digital-employee-spec) 规范，确保跨平台兼容。
+所有资产遵循统一的 [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec) 规范，确保跨平台兼容。
 
 ### 3. 导入你的平台
 
-支持导入到任何兼容的数字员工平台。详见 [platform-import-rules](https://github.com/hermes-agent/digital-employee-spec/blob/main/docs/platform-import-rules.md)。
+支持导入到任何兼容的数字员工平台。详见 [platform-import-rules](https://github.com/bangwozuo/digital-employee-spec/blob/main/docs/platform-import-rules.md)。
 
 ---
 
@@ -68,21 +68,21 @@ digital-employee-ecosystem/
 - **描述**: 处理售前咨询、订单查询、售后退换货的全自动电商客服
 - **技能**: 商品推荐、订单追踪、退换货处理、情绪安抚
 - **连接器**: 淘宝/天猫、京东、拼多多、微信客服
-- [查看详情](https://github.com/hermes-agent/digital-employee-examples/tree/main/ecommerce-customer-service-employee)
+- [查看详情](https://github.com/bangwozuo/digital-employee-examples/tree/main/ecommerce-customer-service-employee)
 
 ### 内容营销员工包
 - **ID**: `content-repurposing-employee`
 - **描述**: 将长文自动拆解为多平台短内容，定时发布与数据追踪
 - **技能**: 内容拆解、标题生成、多平台适配、发布调度
 - **连接器**: 微信公众号、小红书、抖音、知乎
-- [查看详情](https://github.com/hermes-agent/digital-employee-examples/tree/main/content-repurposing-employee)
+- [查看详情](https://github.com/bangwozuo/digital-employee-examples/tree/main/content-repurposing-employee)
 
 ### 会议纪要员工包
 - **ID**: `meeting-minutes-digital-employee`
 - **描述**: 自动参会、记录、提取行动项并同步到任务系统
 - **技能**: 语音转写、要点提取、行动项识别、待办同步
 - **连接器**: 飞书会议、腾讯会议、钉钉、Notion
-- [查看详情](https://github.com/hermes-agent/digital-employee-examples/tree/main/meeting-minutes-digital-employee)
+- [查看详情](https://github.com/bangwozuo/digital-employee-examples/tree/main/meeting-minutes-digital-employee)
 
 ---
 
@@ -130,26 +130,26 @@ digital-employee-ecosystem/
 
 | 示例名称 | 行业 | 复杂度 | 快速体验 |
 |---------|------|--------|---------|
-| [电商客服员工](https://github.com/hermes-agent/digital-employee-examples/tree/main/ecommerce-customer-service-employee) | 电商零售 | 中级 | `git clone` + 配置API Key |
-| [内容营销员工](https://github.com/hermes-agent/digital-employee-examples/tree/main/content-repurposing-employee) | 内容营销 | 初级 | `git clone` + 配置账号 |
-| [会议纪要员工](https://github.com/hermes-agent/digital-employee-examples/tree/main/meeting-minutes-digital-employee) | 自动化办公 | 中级 | `git clone` + 配置会议平台 |
-| [客户反馈分析师](https://github.com/hermes-agent/digital-employee-examples/tree/main/customer-feedback-analyst) | 客户服务 | 初级 | `git clone` + 上传数据 |
-| [报价估算员工](https://github.com/hermes-agent/digital-employee-examples/tree/main/quote-estimator-digital-employee) | 销售增长 | 初级 | `git clone` + 配置产品库 |
-| [PRD助手员工](https://github.com/hermes-agent/digital-employee-examples/tree/main/prd-assistant-digital-employee) | 互联网产品研发 | 中级 | `git clone` + 配置模板 |
-| [现金流提醒员工](https://github.com/hermes-agent/digital-employee-examples/tree/main/cashflow-reminder-employee) | 财税 | 初级 | `git clone` + 配置数据源 |
-| [外包需求分析师](https://github.com/hermes-agent/digital-employee-examples/tree/main/outsourcing-requirement-analyst) | 技术外包 | 高级 | `git clone` + 配置行业知识库 |
-| [GitHub仓库分析师](https://github.com/hermes-agent/digital-employee-examples/tree/main/github-repo-analyst-employee) | 平台运营 | 中级 | `git clone` + 配置GitHub Token |
+| [电商客服员工](https://github.com/bangwozuo/digital-employee-examples/tree/main/ecommerce-customer-service-employee) | 电商零售 | 中级 | `git clone` + 配置API Key |
+| [内容营销员工](https://github.com/bangwozuo/digital-employee-examples/tree/main/content-repurposing-employee) | 内容营销 | 初级 | `git clone` + 配置账号 |
+| [会议纪要员工](https://github.com/bangwozuo/digital-employee-examples/tree/main/meeting-minutes-digital-employee) | 自动化办公 | 中级 | `git clone` + 配置会议平台 |
+| [客户反馈分析师](https://github.com/bangwozuo/digital-employee-examples/tree/main/customer-feedback-analyst) | 客户服务 | 初级 | `git clone` + 上传数据 |
+| [报价估算员工](https://github.com/bangwozuo/digital-employee-examples/tree/main/quote-estimator-digital-employee) | 销售增长 | 初级 | `git clone` + 配置产品库 |
+| [PRD助手员工](https://github.com/bangwozuo/digital-employee-examples/tree/main/prd-assistant-digital-employee) | 互联网产品研发 | 中级 | `git clone` + 配置模板 |
+| [现金流提醒员工](https://github.com/bangwozuo/digital-employee-examples/tree/main/cashflow-reminder-employee) | 财税 | 初级 | `git clone` + 配置数据源 |
+| [外包需求分析师](https://github.com/bangwozuo/digital-employee-examples/tree/main/outsourcing-requirement-analyst) | 技术外包 | 高级 | `git clone` + 配置行业知识库 |
+| [GitHub仓库分析师](https://github.com/bangwozuo/digital-employee-examples/tree/main/github-repo-analyst-employee) | 平台运营 | 中级 | `git clone` + 配置GitHub Token |
 
 ---
 
 ## 平台入口
 
-- **数字员工平台主站**: [https://github.com/hermes-agent](https://github.com/hermes-agent)
-- **规范文档**: [digital-employee-spec](https://github.com/hermes-agent/digital-employee-spec)
-- **分类体系**: [digital-employee-taxonomy](https://github.com/hermes-agent/digital-employee-taxonomy)
-- **技能市场**: [digital-employee-skills-zh](https://github.com/hermes-agent/digital-employee-skills-zh)
-- **连接器市场**: [digital-employee-connectors-zh](https://github.com/hermes-agent/digital-employee-connectors-zh)
-- **示例仓库**: [digital-employee-examples](https://github.com/hermes-agent/digital-employee-examples)
+- **数字员工平台主站**: [https://github.com/bangwozuo](https://github.com/bangwozuo)
+- **规范文档**: [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec)
+- **分类体系**: [digital-employee-taxonomy](https://github.com/bangwozuo/digital-employee-taxonomy)
+- **技能市场**: [digital-employee-skills-zh](https://github.com/bangwozuo/digital-employee-skills-zh)
+- **连接器市场**: [digital-employee-connectors-zh](https://github.com/bangwozuo/digital-employee-connectors-zh)
+- **示例仓库**: [digital-employee-examples](https://github.com/bangwozuo/digital-employee-examples)
 
 ---
 
@@ -161,7 +161,7 @@ digital-employee-ecosystem/
 
 - [ ] 阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [ ] 阅读 [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
-- [ ] 确保你的资产符合 [digital-employee-spec](https://github.com/hermes-agent/digital-employee-spec)
+- [ ] 确保你的资产符合 [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec)
 - [ ] 提交 PR 到本仓库的对应分类
 
 ---

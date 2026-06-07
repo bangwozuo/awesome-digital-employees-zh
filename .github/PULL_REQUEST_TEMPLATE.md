@@ -15,10 +15,10 @@
 ## 检查清单
 
 - [ ] 我已阅读 [CONTRIBUTING.md](../CONTRIBUTING.md)
-- [ ] 新增资产符合 [digital-employee-spec](https://github.com/hermes-agent/digital-employee-spec) 规范
+- [ ] 新增资产符合 [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec) 规范
 - [ ] 所有链接已验证有效
 - [ ] 描述准确、客观、无夸大
-- [ ] 分类符合 [digital-employee-taxonomy](https://github.com/hermes-agent/digital-employee-taxonomy)
+- [ ] 分类符合 [digital-employee-taxonomy](https://github.com/bangwozuo/digital-employee-taxonomy)
 
 ## 相关 Issue
 

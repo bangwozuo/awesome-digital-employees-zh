@@ -6,16 +6,16 @@
 
 在提问前，请先查阅以下资源：
 
-- [digital-employee-spec](https://github.com/hermes-agent/digital-employee-spec) — 总规范文档
-- [digital-employee-taxonomy](https://github.com/hermes-agent/digital-employee-taxonomy) — 分类体系
+- [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec) — 总规范文档
+- [digital-employee-taxonomy](https://github.com/bangwozuo/digital-employee-taxonomy) — 分类体系
 - [CONTRIBUTING.md](./CONTRIBUTING.md) — 贡献指南
 
 ### 2. 提交 Issue
 
 如果文档无法解决你的问题，请提交 Issue：
 
-- [Bug 报告](https://github.com/hermes-agent/awesome-digital-employees-zh/issues/new?template=bug_report.md)
-- [功能请求](https://github.com/hermes-agent/awesome-digital-employees-zh/issues/new?template=feature_request.md)
+- [Bug 报告](https://github.com/bangwozuo/awesome-digital-employees-zh/issues/new?template=bug_report.md)
+- [功能请求](https://github.com/bangwozuo/awesome-digital-employees-zh/issues/new?template=feature_request.md)
 
 ### 3. 社区讨论
 

@@ -17,7 +17,7 @@
 
 1. **Fork** 本仓库
 2. 在对应分类下添加条目，遵循现有格式
-3. 确保资产符合 [digital-employee-spec](https://github.com/hermes-agent/digital-employee-spec)
+3. 确保资产符合 [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec)
 4. 提交 **Pull Request**，使用 PR 模板
 
 ### 资产条目格式
@@ -26,7 +26,7 @@
 ### 资产名称
 - **ID**: `asset-id`（小写蛇形，唯一）
 - **描述**: 一句话说明（30字以内）
-- **分类**: 对应 [digital-employee-taxonomy](https://github.com/hermes-agent/digital-employee-taxonomy) 分类
+- **分类**: 对应 [digital-employee-taxonomy](https://github.com/bangwozuo/digital-employee-taxonomy) 分类
 - **来源**: 原仓库链接
 - **License**: 原仓库License
 ```
@@ -54,5 +54,5 @@ docs: <description>
 
 ## 获取帮助
 
-- 提交 [Issue](https://github.com/hermes-agent/awesome-digital-employees-zh/issues)
+- 提交 [Issue](https://github.com/bangwozuo/awesome-digital-employees-zh/issues)
 - 阅读 [SUPPORT.md](./SUPPORT.md)
