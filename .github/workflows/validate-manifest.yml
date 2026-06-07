@@ -1,0 +1,85 @@
+name: Validate Manifest
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  validate-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema requests
+      - name: Validate YAML/JSON manifests
+        run: |
+          python -c "
+import os, sys, yaml, json, glob
+errors = []
+for pattern in ['**/*.yaml', '**/*.yml', '**/*.json']:
+    for path in glob.glob(pattern, recursive=True):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                if path.endswith('.json'):
+                    json.load(f)
+                else:
+                    yaml.safe_load(f)
+            print(f'OK: {path}')
+        except Exception as e:
+            errors.append(f'{path}: {e}')
+            print(f'ERROR: {path}: {e}')
+if errors:
+    print(f'\n{len(errors)} manifest(s) failed validation')
+    sys.exit(1)
+else:
+    print('\nAll manifests valid')
+"
+      - name: Sync Sub-repo Directories
+        run: |
+          python -c "
+import os, json
+sub_repos = [
+    'digital-employee-spec', 'digital-employee-taxonomy', 'digital-employee-manifest',
+    'digital-employee-quality-gates', 'digital-employee-marketplace-spec',
+    'digital-employee-devkit', 'digital-employees-zh', 'digital-employee-skills-zh',
+    'digital-employee-connectors-zh', 'digital-employee-workflows-zh',
+    'digital-employee-schedules-zh', 'digital-employee-teams-zh',
+    'digital-employee-examples', 'digital-employee-solution-packs-zh'
+]
+index = {}
+for repo in sub_repos:
+    if os.path.isdir(repo):
+        index[repo] = {'categories': [d for d in os.listdir(repo) if os.path.isdir(os.path.join(repo, d)) and not d.startswith('.')]}
+with open('sub_repo_index.json', 'w', encoding='utf-8') as f:
+    json.dump(index, f, ensure_ascii=False, indent=2)
+print('Synced', len(index), 'sub-repos')
+"
+      - name: Generate Directory Index
+        run: |
+          python -c "
+import os, json
+from datetime import datetime
+index = {'generated_at': datetime.now().isoformat(), 'entries': []}
+for root, dirs, files in os.walk('.'):
+    if '.git' in root or 'node_modules' in root:
+        continue
+    rel = os.path.relpath(root, '.')
+    if rel == '.':
+        rel = ''
+    md_files = [f for f in files if f.endswith('.md')]
+    if md_files or (dirs and rel):
+        index['entries'].append({'path': rel, 'files': md_files, 'subdirs': [d for d in dirs if not d.startswith('.')]})
+with open('DIRECTORY_INDEX.json', 'w', encoding='utf-8') as f:
+    json.dump(index, f, ensure_ascii=False, indent=2)
+print('Generated index with', len(index['entries']), 'entries')
+"
+
+      - name: Report failure
+        if: failure()
+        run: echo '::error::Manifest validation failed. Check logs above for details.'

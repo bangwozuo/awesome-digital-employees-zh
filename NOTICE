@@ -1,0 +1,40 @@
+Hermes Agent / 数字员工平台 (Digital Employee Platform)
+Copyright 2024-2026 The Hermes Agent Contributors
+
+This product is a curated directory of digital employee assets, skills,
+connectors, and workflows from the open-source community.
+
+================================================================================
+THIRD-PARTY ASSETS AND ATTRIBUTIONS
+================================================================================
+
+This repository contains links and references to third-party digital employee
+assets hosted in separate repositories. Each referenced asset maintains its own
+license and copyright notice. Please refer to the original repository of each
+asset for its specific licensing terms.
+
+The following organizations and individuals have contributed assets referenced
+in this repository:
+
+- Hermes Agent Core Team
+- Digital Employee Community Contributors
+- Individual open-source maintainers
+
+================================================================================
+PLATFORM AND BRAND
+================================================================================
+
+"Hermes Agent", "数字员工平台", "Digital Employee", "BusinessSkill",
+"BusinessConnector", "ScenarioWorkflow", and related logos are trademarks
+of the Hermes Agent project.
+
+================================================================================
+ACKNOWLEDGMENTS
+================================================================================
+
+This project builds upon the collective work of the AI agent and open-source
+communities. We acknowledge the foundational contributions of:
+
+- The LangChain / LangGraph ecosystem
+- The OpenAI, Anthropic, and open-source LLM communities
+- The countless open-source maintainers who make this ecosystem possible
