@@ -43,22 +43,17 @@ else:
       - name: Sync Sub-repo Directories
         run: |
           python -c "
-import os, json
-sub_repos = [
-    'digital-employee-spec', 'digital-employee-taxonomy', 'digital-employee-manifest',
-    'digital-employee-quality-gates', 'digital-employee-marketplace-spec',
-    'digital-employee-devkit', 'digital-employees-zh', 'digital-employee-skills-zh',
-    'digital-employee-connectors-zh', 'digital-employee-workflows-zh',
-    'digital-employee-schedules-zh', 'digital-employee-teams-zh',
-    'digital-employee-examples', 'digital-employee-solution-packs-zh'
-]
+import os, json, re
+# 生态仓库清单以 README 目录表为唯一事实源，避免硬编码清单过期
+readme = open('README.md', encoding='utf-8').read()
+sub_repos = sorted(set(re.findall(r'github\.com/bangwozuo/([A-Za-z0-9._-]+)', readme)))
 index = {}
 for repo in sub_repos:
     if os.path.isdir(repo):
         index[repo] = {'categories': [d for d in os.listdir(repo) if os.path.isdir(os.path.join(repo, d)) and not d.startswith('.')]}
 with open('sub_repo_index.json', 'w', encoding='utf-8') as f:
-    json.dump(index, f, ensure_ascii=False, indent=2)
-print('Synced', len(index), 'sub-repos')
+    json.dump({'known_repos': sub_repos, 'vendored': sorted(index)}, f, ensure_ascii=False, indent=2)
+print('Synced', len(sub_repos), 'known repos,', len(index), 'vendored locally')
 "
       - name: Generate Directory Index
         run: |

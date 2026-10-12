@@ -6,8 +6,8 @@
 
 在提问前，请先查阅以下资源：
 
-- [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec) — 总规范文档
-- [digital-employee-taxonomy](https://github.com/bangwozuo/digital-employee-taxonomy) — 分类体系
+- [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec) — 总规范、分类体系与 schema
+- [digital-employees-hub-zh](https://github.com/bangwozuo/digital-employees-hub-zh) — 25 员工总目录与演示视频索引
 - [CONTRIBUTING.md](./CONTRIBUTING.md) — 贡献指南
 
 ### 2. 提交 Issue

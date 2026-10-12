@@ -26,7 +26,7 @@
 ### 资产名称
 - **ID**: `asset-id`（小写蛇形，唯一）
 - **描述**: 一句话说明（30字以内）
-- **分类**: 对应 [digital-employee-taxonomy](https://github.com/bangwozuo/digital-employee-taxonomy) 分类
+- **分类**: 对应 [digital-employee-spec](https://github.com/bangwozuo/digital-employee-spec) 分类体系
 - **来源**: 原仓库链接
 - **License**: 原仓库License
 ```
